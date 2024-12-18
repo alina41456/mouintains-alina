@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e9a71c;
+}
+
+/* Шапка */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+}
+
+.site-header h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+/* Главное фото */
+.main-banner {
+    background-image: url('fonn.webp');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.main-text {
+    background-color: rgba(200, 200, 200, 0.448);
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Три блока */
+.grid-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    width: 550px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.image {
+    background-color: #d3d3d3;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #000;
+    line-height: 1.2em;
+    margin-top: 10px;
+    text-align: center;
+    text-transform:none ;
+}
+.image {
+    background-size: cover; /* Заполнение блока изображением */
+    background-position: center; /* Центрирование изображения */
+    height: 150px; /* Высота изображения */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Скруглённые углы */
+    margin: 20px;
+}
+
+/* Добавляем фото для каждого блока */
+.image.tibet {
+    background-image: url('tib.jpg'); /* Путь к фото Тибета */
+}
+
+.image.everest {
+    background-image: url('ev.jpeg'); /* Путь к фото Эвереста */
+}
+
+.image.elbrus {
+    background-image: url('el.jpg'); /* Путь к фото Эльбруса */
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff; /* Белый цвет заголовка для контраста */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для читаемости */
+    padding: 5px 10px;
+    border-radius: 10px;
+}
